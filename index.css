@@ -1,0 +1,42 @@
+body { 
+    background-color: rgb(130, 174, 255);
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#root {
+    background-color: white;
+    width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 20px gray;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(255, 92, 92);
+}
+
+.Intro {
+    background-color: rgb(255, 161, 161);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.blog_link {
+    padding: 10px;
+    color: black;
+    margin: 20px;
+}
+
+a {
+    color: black;
+}
+
+.date {
+    font-style: italic;
+    color: gray;
+    margin: 0px;
+}
