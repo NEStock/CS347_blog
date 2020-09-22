@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog3.css">
+    <title>Blog 3</title>
+
+</head>
+
+<body>
+    <div id="root">
+        <header>
+            <h1>Blog 3</h1>
+        </header>
+
+        <main>
+            <p>
+                During this past week I have spent much time brainstorming and gathering ideas for my project 1 website. The first step in this process was wireframing. I had heard of wireframing before, but in all honesty I had no idea what it actually meant to create a wireframe. In this blog post, I will describe my experience wireframing.
+            </p>
+            <p>
+                The first thing I wanted to know was what actually is wireframing? After doing a bit of preliminary research, I found the following two guides to be a very helpful start: <a href="https://careerfoundry.com/en/blog/ux-design/what-is-a-wireframe-guide/" target="_blank">[1] What Exactly Is Wireframing? A Guide To Wireframes</a> and <a href="https://blog.capterra.com/how-to-create-wireframes/" target="_blank">[2] How I Learned to Create a Wireframe: 6 Easy Steps to Follow</a>
+            </p>
+            <p>
+                According to [1], wireframing is "a two-dimensional skeletal outline of a webpage or app" which "a clear overview of the page structure, layout, information architecture, user flow, functionality, and intended behaviors". From [2], I learned that wireframing should focus more on UX rather than design; "UX is all about, Who is my audience, and how can I make experience of using my site as seamless and enjoyable as possible for them?". Keeping this in mind, I began by writing out information about my client.
+            </p>
+            <p>
+                Women In Technology is a JMU student organization whose focus is to encourage women to pursue STEM fields and support them both socially and professionally. Some of the client website's needs are as follows:
+            </p>
+            <ul>
+                <li>To attract students to join the organizaion</li>
+                <li>To attract professional organizations to present to the club</li>
+                <li>To give an overview of the organization</li>
+                <li>To show off the organizaion's accomplishments</li>
+                <li>To direct visitors to our social media</li>
+                <li>To collect new contact information for potential members</li>
+            </ul>
+            <div class="two-columns">
+                <div id="left-colum">
+                    <p>
+                        Keeping in mind the client's needs, I developed a list of pages the website would need and what information should be contained in each page. Once I had these lists completed, I was ready to start designing the page layouts with pencil and paper. After reviewing my designs and selecting the best one, I began desiging the layout using HTML placeholders and css.
+                    </p>
+                </div>
+                <figure id="home-page-first-draft">
+                    <img src="images/blog3_project1_wireframe.png" alt="home page layout first draft on paper and pencil">
+                    <figcaption>Home Page Layout: First Draft</figcaption>
+                </figure>
+            </div>
+            <div id="home-page-second-draft">
+                <div id=header>
+                    <h1>Women In Technology</h1>
+                </div>
+            
+                <div id="root1">
+                    <div id="logo">Logo</div>
+            
+                    <div id="mission-statement">
+                        <block class="title">Our Mission</block>
+                        <p>mission statement here...</p>
+                    </div>
+                </div>
+            
+                <div id="root2">
+                    <div id="about-us" class="card-nav-link">
+                        About Us
+                    </div>
+                    <div id="upcoming-events" class="card-nav-link">
+                        Upcoming Events
+                    </div>
+                    <div id="contact" class="card-nav-link">
+                        Contact Form
+                    </div>
+                    <div id="meet-the-team" class="card-nav-link">
+                        Meet the Team
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="social-links">
+                        <p>Social media links</p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                This design was accomplished with the HTML and CSS code below.
+            </p>
+            <div id="code-columns" class="two-columns">
+<pre id="html">&ltdiv id="home-page-second-draft"&gt
+  &ltdiv id=header&gt
+    &lth1&gtWomen In Technology&lt/h1&gt
+  &lt/div&gt
+  &ltdiv id="root1"&gt
+    &ltdiv id="logo"&gtLogo&lt/div&gt
+    &ltdiv id="mission-statement"&gt
+      &ltblock class="title"&gt
+        Our Mission
+      &lt/block&gt
+      &ltp&gtmission statement here...&lt/p&gt
+     &lt/div&gt
+  &lt/div&gt
+    &ltdiv id="root2"&gt
+      &ltdiv id="about" class="card-nav-link"&gt
+        About Us
+      &lt/div&gt
+      &ltdiv id="upcoming" class="card-nav-link"&gt
+        Upcoming Events
+      &lt/div&gt
+      &ltdiv id="contact" class="card-nav-link"&gt
+        Contact Form
+      &lt/div&gt
+      &ltdiv id="team" class="card-nav-link"&gt
+        Meet the Team
+      &lt/div&gt
+    &lt/div&gt
+  &ltdiv id="footer"&gt
+    &ltdiv id="social-links"&gt
+      &ltp&gtSocial media links&lt/p&gt
+    &lt/div&gt
+  &lt/div&gt
+&lt/div&gt</pre>
+<pre id="css">#home-page-second-draft {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    margin: 0 0 20px 0;
+    border: grey 2px solid;
+}
+
+#header {
+    background-color: rgb(136, 100, 170);
+    height: 200px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header > h1 {
+    color: white;
+    font-size: 4em;
+}
+
+#root1 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin: 20px 10px;
+    border: grey 2px solid;
+}
+
+#mission-statement {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+#mission-statement > .title {
+    font-size: 2em;
+    padding: 5px;
+}
+
+#root2 {
+    padding: 50px;
+    border-top: rgb(136, 100, 170) solid 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-nav-link {
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(91,52,144);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer {
+    border-top: lightgrey 2px solid;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}</pre>
+
+            </div>
+        </main>
+        
+        <footer>
+            <a href="index.html">Return to Home Page</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
