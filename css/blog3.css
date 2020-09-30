@@ -95,9 +95,6 @@ ul {
 }
 
 pre {
-    background-color:rgb(240, 247, 255);
-    padding: 20px;
-    font: monospace;
     font-size: 1.1em;
     margin: 20px;
     box-sizing: border-box;

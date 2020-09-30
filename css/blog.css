@@ -10,3 +10,8 @@ ul {
     margin: 20px;
 }
 
+pre {
+    background-color:rgb(240, 247, 255);
+    padding: 20px;
+    font: monospace;
+}

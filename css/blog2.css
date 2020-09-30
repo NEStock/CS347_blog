@@ -44,19 +44,13 @@
 }
 
 #holy-grail-code-and-caption > pre {
-    background-color:rgb(240, 247, 255);
     width: 35%;
-    padding: 20px;
     margin: 0 40px 40px 0;
-    font: monospace;
     font-size: 1.1em;
 }
 
 #holy-grail-caption > pre {
-    background-color:rgb(240, 247, 255);
     width: 65%;
-    padding: 20px;
     margin: 0 0 40px 40px;
-    font: monospace;
     font-size: 1.1em;
 }
