@@ -1,0 +1,54 @@
+q {
+    font-style: italic;
+}
+
+#reference {
+    text-decoration: none;
+}
+
+#buttons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: none;
+}
+
+.button {
+    margin: 2px;
+}
+
+#buttons-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: none;
+    margin: 20px;
+}
+
+.button-mobile {
+    margin: 10px;
+    padding: 20px;
+    border: black 1px solid;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: rgb(145, 183, 255);
+    display: block;
+}
+
+.button-mobile:active {
+    background-color: lightcoral;
+}
+
+pre {
+    width: fit-content;
+    margin-left: 20px;
+}
+
+@media (max-width: 960px) {
+    #root {
+       width: 100%;
+    }
+
+}
