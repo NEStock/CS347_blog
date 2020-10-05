@@ -6,7 +6,7 @@ body {
 
 #root {
     background-color: white;
-    width: 960px;
+    max-width: 960px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 10px;
@@ -25,10 +25,25 @@ h1 {
     margin: 10px;
 }
 
-.blog-link {
+h2 {
+    color: cornflowerblue;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.blog-link, .project-link {
     padding: 10px;
     color: black;
     margin: 20px;
+}
+
+#blog-links, #project-links {
+    padding-left: 20px;
 }
 
 a {
