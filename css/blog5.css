@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#no-script {
+    width: max-content;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border: grey 2px solid;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col-1 {
+    margin: 10px 10px 10px 0;
+}
+
+#position-css {
+    margin-right: 20px;
+    height: min-content;
+}
