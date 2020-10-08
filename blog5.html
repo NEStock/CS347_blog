@@ -21,17 +21,14 @@
     &lt;noscript&gt;To use this site, please enable JavaScript.&lt;/noscript&gt;
 </pre>
 
-        <p>The HTML &lt;noscript&gt; element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser." <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">(MDN)</a>.</p>
+            <p>The HTML &lt;noscript&gt; element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser." <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">(MDN)</a>.</p>
 
-        <p>Another thing I wanted to note about my blog today is that in the past, my footer has been at the bottom of my content, but not always at the bottom of the webpage. While this did not cause any actual issues, it was definitely not preferable. When I began writing today's blog on a blank page and noticed the footer directly under the header, I knew it was time to get this fixed (no pun intended).</p>
+            <p>Another thing I wanted to note about my blog today is that in the past, my footer has been at the bottom of my content, but not always at the bottom of the webpage. While this did not cause any actual issues, it was definitely not preferable. When I began writing today's blog on a blank page and noticed the footer directly under the header, I knew it was time to get this fixed (no pun intended).</p>
 
-        <img src="images/blog1_screenshot.jpeg" alt="Blog 1 Screenshot before fixing footer to the bottom of the page">
+            <img src="images/blog1_screenshot.jpeg" alt="Blog 1 Screenshot before fixing footer to the bottom of the page">
 
-        <div class="two-column">
-            <div class="col-1">
-                <p>Luckily, we learned about absolute positioning in <a href="https://twodee.org/blog/17622" target="_blank">Lecture 9</a>, so I knew exactly where to start. I added the following CSS to my shared styling sheet and figured I was done.</p>
-                <p>While this did fix my footer to the bottom of the page, it created another issue which I'll admit stumped me at first. If you look closely at the bottom of the image below, you'll notice that the footer overlaps the CSS code snippet.</p>
-            </div>
+            <p>Luckily, we learned about absolute positioning in <a href="https://twodee.org/blog/17622" target="_blank">Lecture 9</a>, so I knew exactly where to start. I added the following CSS to my shared styling sheet and figured I was done.</p>
+
 <pre id="position-css" class="col-2">#root {
     position: relative;
 }
@@ -40,9 +37,9 @@ footer {
     position: absolute;
     bottom: 10px;
 }</pre>
-        </div>
-    
 
+            <p>While this did fix my footer to the bottom of the page, it created another issue which I'll admit stumped me at first. If you look closely at the bottom of the image below, you'll notice that the footer overlaps the CSS code snippet.</p>
+    
             <img src="images/blog4_screenshot.jpeg" alt="Blog 4 Screenshot with footer fixed to the bottom of the page, but overlapping main content">
 
             <p>I tried adding padding and a margin, both of which failed to help, and numerous other hacks I could find. Eventually, I found one that worked:</p>
