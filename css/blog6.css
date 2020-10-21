@@ -1,0 +1,74 @@
+h3 {
+    color: lightcoral;
+    margin-left: 10px;
+}
+
+.inline-code {
+    display: inline-block;
+    padding: 5px;
+    background-color:rgb(240, 247, 255);
+    font-family: monospace;
+    font-size: .9em;
+}
+
+pre {
+    width: max-content;
+    margin-left: 20px;
+}
+
+.example > pre {
+    margin-left: 30px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.js {
+    min-height: 50px;
+    min-width: 200px;
+}
+
+.example , .try-it {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+textarea, button {
+    margin-left: 30px;
+}
+
+button {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 3px 5px;
+    background-color: lightcoral;
+    outline-color: black;
+}
+
+.preview {
+    margin: 10px 30px;
+    border: 1px lightcoral solid;
+    min-width: 150px;
+    min-height: 30px;
+    font-family: monospace;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+
+@media (max-width: 550px) {
+    pre {
+        margin-left: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
