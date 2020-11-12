@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog8.css">
+    <title>Blog 8</title>
+</head>
+<body>
+    
+    <div id="root">
+        <header>
+            <h1>Blog 8</h1>
+        </header>
+        
+        <main>
+            <p>During the past three weeks of CS 347, we have built two apps using React, the today app, which we finished in Lecture 20, and the notes app, which we started in Leture 21. After completing Lab 20, I am finally feeling more confident in my abilitiy to use React to create web applications.</p>
+                
+            <p>In the lecture 21 videos, we learned about React Router DOM, a helper library that provides a component Router which enables a React app to have multiple pages loaded directly from a given URL. The implementation is done in the App component via a <span class="inline-code">&lt;Swtich&gt;</span> tag provided by React Router which acts like a switch-statement. The <span class="inline-code">&lt;Route&gt;</span> tag acts like a case in the switch-statement, which re-directs the user based on the URL. The <span class="inline-code">&lt;Redirect&gt;</span> tag acts like a default case.</p>
+<pre>
+&lt;Switch&gt;
+    &lt;Route exact path="/componentA"&gt;
+        &lt;ComponentA/&gt;
+    &lt;/Route&gt;
+    &lt;Route exact path="/componentB"&gt;
+        &lt;ComponentB/&gt;
+    &lt;/Route&gt;
+    &lt;Redirect to="/home"/&gt;
+&lt;/Switch&gt;
+</pre>
+
+            <h2>Why would you want to use React Router?</h2>
+            <p>As discussed briefly in the lecture videos, React apps are Single-page applications (SPAs), which "rewrite sections of a page rather than loading entire new pages from a server" [1].</p>
+
+            <p>Some of the challenges associated with SPAs discussed in the article I read are maintaining browser history and directly accessing a URL that is not the site's home page. Both of these can be overcome with a router, which allows a user to navigate between pages, builds a browsing history, and keeps the UI state in sync. React Router does exactly this for React apps, solving the problems developers face with SPAs, while still providing all of the advantages of React.</p>
+
+        </main>
+
+        <footer>
+            <h3>References</h3>
+            <ol>
+                <li><a href="https://blog.logrocket.com/react-router-dom-set-up-essential-components-parameterized-routes-505dc93642f1/" target="_blank">React Router DOM: Setup, essential components, and parameterized routes</a></li>
+            </ol>
+            <a href="index.html">Return to Home Page</a>
+        </footer>
+</body>
+</html>
