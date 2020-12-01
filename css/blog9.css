@@ -1,0 +1,8 @@
+h2 {
+    padding: 15px 0 0 20px;
+}
+
+ul > li > ul {
+    border: none;
+    margin: 5px 0;
+}
